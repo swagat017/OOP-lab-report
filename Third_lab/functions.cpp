@@ -24,11 +24,11 @@ int main()
     double area;
     char ch;
 
-    cout << "Which solid's area do you and calculate among given solids?\n";
+    cout << "Which solid's area do you want calculate among given solids?\n";
     cout << "1. Cube" << endl;
     cout << "2. Rectangle" << endl;
     cout << "3. Circle" << endl;
-    cout << "Enter the number: ";
+    cout << "Choose among 1, 2 and 3: ";
     cin >> choice;
 
     if (choice == 1)
