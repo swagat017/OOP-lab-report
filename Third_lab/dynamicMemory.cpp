@@ -7,7 +7,7 @@ char *name = new char;
 
 void scanRollandName()
 {
-    cout << "Enter your name: ";
+    //cout << "Enter your name: ";
     cin >> name;
     cout << "Enter your roll number: ";
     cin >> *roll;
