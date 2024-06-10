@@ -24,7 +24,7 @@ public:
         this->height = height;
     }
 
-    string occupation;
+    string profession;
 
     void getdata()
     {
@@ -34,8 +34,8 @@ public:
         cin >> age;
         cout << "Enter height: ";
         cin >> height;
-        cout << "Enter occupation: ";
-        cin >> occupation;
+        cout << "Enter profession: ";
+        cin >> profession;
     }
 
     void display()
@@ -43,7 +43,7 @@ public:
         cout << "\nName: " << name;
         cout << "\nAge: " << age;
         cout << "\nHeight: " << height;
-        cout << "\nOccupation: " << occupation;
+        cout << "\nprofession: " << profession;
     }
 
     double getHeight()
@@ -73,7 +73,7 @@ int main(void)
     p3.display();
 
     cout << "\n\nAccessing public member directly:\n";
-    cout << "Occupation: " << p3.occupation << endl;
+    cout << "profession: " << p3.profession << endl;
 
     cout << "Original height: " << p3.getHeight() << endl;
     p3.setHeight(6.1);
