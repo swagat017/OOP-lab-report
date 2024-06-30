@@ -3,11 +3,16 @@ using namespace std;
 
 class complex
 {
-    const double real;
+    const double real = 7;
     double img;
 
 public:
-    complex(double r, double i) : real(r), img(i)
+    complex()
+    {
+        img = 9;
+    }
+
+    complex(double r, double i) : img(i)
     {
     }
 
@@ -21,18 +26,31 @@ public:
         return img;
     }
 
-    void display() const;
+    void setComp(double re, double im)
+    {
+        re = getReal();
+        im = img;
+    }
+
+    void display() const
+    {
+        cout << "The complex number is: \n";
+        cout << real << " + " << img << "i" << endl;
+    }
 };
 
-void complex::display() const
+complex const display(complex &c)
 {
-    cout<<"The complex number is: \n";
+    double real = c.getReal();
+    double img = c.getImg();
+
+    cout << "The complex number is: \n";
     cout << real << " + " << img << "i" << endl;
 }
 
 int main()
 {
-    complex c1(2, 3);
+    complex c1;
 
     c1.display();
 
