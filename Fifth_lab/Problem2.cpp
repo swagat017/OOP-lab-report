@@ -7,9 +7,8 @@ class complex
     double img;
 
 public:
-    complex(double r, double i) : real(r), img(i)
-    {
-    }
+    complex() : real(1), img(1) {}
+    complex(double r, double i) : real(r), img(i) {}
 
     double getReal() const
     {
@@ -26,7 +25,7 @@ public:
 
 void complex::display() const
 {
-    cout<<"The complex number is: \n";
+    cout << "The complex number is: \n";
     cout << real << " + " << img << "i" << endl;
 }
 
@@ -38,6 +37,13 @@ int main()
 
     cout << "Real part: " << c1.getReal() << endl;
     cout << "Imaginary part: " << c1.getImg() << endl;
+
+    const complex c2;
+
+    c2.display();
+
+    cout << "Real part: " << c2.getReal() << endl;
+    cout << "Imaginary part: " << c2.getImg() << endl;
 
     return 0;
 }
