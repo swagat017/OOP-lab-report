@@ -33,7 +33,11 @@ int main ()
     cout<<"Default constructor: ";
     t1.display();
 
-    Time t2(100);
+    double seconds;
+    cout << "Enter the time in seconds: ";
+    cin >> seconds;
+
+    Time t2(seconds);
     cout<<"Parameterized constructor: ";
     t2.display();
 
