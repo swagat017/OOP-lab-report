@@ -6,11 +6,11 @@ class A
 public:
     A()
     {
-        cout << "A is created.\n";
+        cout << "Base constructor A is called.\n";
     }
     ~A()
     {
-        cout << "A is destroyed.\n";
+        cout << "Base deconstructor A is called.\n";
     }
 };
 
@@ -19,20 +19,20 @@ class B : public A
 public:
     B()
     {
-        cout << "B is created.\n";
+        cout << "Derived constructor B is called.\n";
     }
     ~B()
     {
-        cout << "B is destroyed.\n";
+        cout << "Derived deconstructor B is called.\n";
     }
 };
 
 int main()
 {
-    cout << "Before creating object A:\n";
+    cout << "Creating object A:\n";
     A a;
 
-    cout << "Before creating object B:\n";
+    cout << "Creating object B:\n";
     B b;
 
     return 0;
