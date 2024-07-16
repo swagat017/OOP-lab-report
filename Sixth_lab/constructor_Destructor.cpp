@@ -10,7 +10,7 @@ public:
     }
     ~A()
     {
-        cout << "Base deconstructor A is called.\n";
+        cout << "Base destructor A is called.\n";
     }
 };
 
@@ -23,7 +23,7 @@ public:
     }
     ~B()
     {
-        cout << "Derived deconstructor B is called.\n";
+        cout << "Derived destructor B is called.\n";
     }
 };
 
